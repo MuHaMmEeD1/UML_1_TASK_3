@@ -11,7 +11,8 @@ namespace UML_1_TASK_3
         private string? state;
 
 
-        private Memento(string? state) { this.state = state; }  
+        private Memento(string? state) { this.state = state; }
+        public Memento() { }  
 
         private string getState() { return state!; }
 

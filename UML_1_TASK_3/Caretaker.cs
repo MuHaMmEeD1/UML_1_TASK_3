@@ -15,12 +15,18 @@ namespace UML_1_TASK_3
 
         public void doSomething()
         {
-            //var m = histoy.pop(); // basa dus medim
 
+            var m = histoy[0];
+
+            Originator.restore(m);
         }
 
         public void undo() {
-            //var m = histoy.save(); // basa dus medim
+
+            var m = Originator;
+
+            histoy.SetValue(m, 0);
+
         }
 
     }
